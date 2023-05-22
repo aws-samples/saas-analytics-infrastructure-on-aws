@@ -86,7 +86,7 @@ export function LoginContent() {
           Auth.currentAuthenticatedUser()
             .then((data) => {
               let decodedToken = jwt_decode(data.signInUserSession.idToken["jwtToken"]);
-              console.log("Token : " + JSON.stringify(data.signInUserSession.idToken["jwtToken"]))
+              //console.log("Token : " + JSON.stringify(data.signInUserSession.idToken["jwtToken"]))
               if ((decodedToken["cognito:groups"] != undefined) && (decodedToken["cognito:groups"].length > 0) && (decodedToken["cognito:groups"][0].includes("admin"))) {
                 dispatch(storeToken(data.signInUserSession.idToken["jwtToken"]))
                 history.push("/");
