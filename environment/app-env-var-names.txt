@@ -1,0 +1,83 @@
+# This file defines the names of the environment variables that are referenced
+# by deployment scripts. 
+
+# The application name that is used to name resources
+# It is best to use a short value to avoid resource name length limits
+APP_NAME
+
+# The application title that will show in the admin and customer UI
+# Should utilize proper capitalization and can include white space
+APP_TITLE
+
+# 12 digit AWS account ID to deploy resources to
+AWS_ACCOUNT_ID
+
+# AWS region used as the default for AWS CLI commands
+# Example: us-east-1
+AWS_DEFAULT_REGION
+
+# Is this environment used for deploying resources that are marked
+# to only be deployed once for a given AWS account? Set to "y"
+# if so or "n" if not.
+ENABLE_ONCE_PER_ACCOUNT_RESOURCES
+
+# The environment name that is used to name resources and to determine
+# the value of environment-specific configurations.
+# It is best to use a short value to avoid resource name length limits
+# Examples: DEV, PROD, your initials
+ENV_NAME
+
+# Where environment variable values should be stored for remote system access.
+# Set value to 'na' to disable remote storage
+REMOTE_ENV_VAR_LOC
+
+# The name or ID of the person who created the application environment
+CREATED_BY
+
+# Primary AWS region to deploy application resources to
+# Example: us-east-1
+AWS_PRIMARY_REGION
+
+# Secondary AWS region to deploy application resources to
+AWS_SECONDARY_REGION
+
+# The name of the S3 bucket that holds Terraform state files
+TF_S3_BACKEND_NAME
+
+
+
+
+
+# Email address of the administrator for use by the identity provider
+ADMIN_IDP_EMAIL
+
+# Email address of the first customer for use by the identity provider
+CUSTOMER1_IDP_EMAIL
+
+# Email address of the second customer for use by the identity provider
+CUSTOMER2_IDP_EMAIL
+
+# Array of customer IDs
+CUSTOMER_IDS_ARRAY
+
+# The number of lambda execution environments that are prepared to respond immediately to invocations.
+# Note: a higher number here may increase the hosting cost
+LAMBDA_PROVISIONED
+
+# Dashboard Endpoint. Value pulled from SSM Parameter Store
+SSM_DASHBOARD_ENDPOINT
+
+# Analytics1 Endpoint. Value pulled from SSM Parameter Store
+SSM_ANALYTICS1_ENDPOINT
+
+# Cognito User Pool Web Client ID. Value pulled from SSM Parameter Store
+SSM_WEB_CLIENT_ID
+
+# Cognito User Pool ID. Value pulled from SSM Parameter Store
+SSM_USER_POOL_ID
+
+# Cognito Identity Pool ID. Value pulled from SSM Parameter Store
+SSM_IDENTITY_POOL_ID
+
+# CloudFront domain. Value pulled from SSM Parameter Store
+SSM_CLOUDFRONT_DOMAIN

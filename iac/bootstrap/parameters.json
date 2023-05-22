@@ -1,0 +1,7 @@
+[
+    "bucketName=###TF_S3_BACKEND_NAME###",
+    "secondaryRegion=###AWS_SECONDARY_REGION###",
+    "enableCRR=false",
+    "enableLocking=true",
+    "enableBucketAccessLogs=true"
+]
